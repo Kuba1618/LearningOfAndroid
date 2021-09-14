@@ -22,8 +22,9 @@
         android:layout_below="@+id/txtWelcome"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
+        android:onClick="onHelloBtnClicked"
         android:text="@string/say_hello"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textColorHighlight="@color/black"
         tools:ignore="TextContrastCheck" />
 
