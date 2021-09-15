@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch(view.getId()) {
             case R.id.btnHello:
-                System.out.println("Hello");
+                Toast.makeText(this, "HelloBtn clicked", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
