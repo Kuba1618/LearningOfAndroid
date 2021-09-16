@@ -5,16 +5,21 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private TextView txtHello;
+    private EditText edtTxtName;
 
     @Override
     public void onClick(View view) {
         switch(view.getId()) {
             case R.id.btnHello:
                 Toast.makeText(this, "HelloBtn clicked", Toast.LENGTH_SHORT).show();
+                txtHello.setText("Hello " + edtTxtName.getText().toString());
                 break;
             default:
                 break;
@@ -30,13 +35,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnHello = findViewById(R.id.btnHello);
         btnHello.setOnClickListener(this);
 
-        btnHello.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                Toast.makeText(MainActivity.this, "Long Press", Toast.LENGTH_LONG).show();
-                return true;
-            }
-        });
+        edtTxtName = findViewById(R.id.edtTxtName);
+        txtHello = findViewById(R.id.txtHello);
+
     }
 
 

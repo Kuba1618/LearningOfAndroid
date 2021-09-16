@@ -4,9 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="100dp">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColor="@color/dark_green"
+        android:textStyle="italic|bold"
+        android:layout_centerInParent="true"
+        android:id="@+id/edtTxtName" />
 
     <TextView
+        android:layout_below="@+id/edtTxtName"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -16,6 +30,7 @@
         android:textSize="20sp"
         android:textStyle="bold|italic" />
 
+
     <Button
         android:id="@+id/btnHello"
         android:layout_width="wrap_content"
@@ -23,5 +38,15 @@
         android:layout_below="@+id/txtWelcome"
         android:layout_centerHorizontal="true"
         android:text="Say Hello" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtHello"
+        android:layout_below="@+id/btnHello"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Hello"
+        android:textSize="20dp"/>
 
 </RelativeLayout>
