@@ -29,6 +29,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         Button btnHello = findViewById(R.id.btnHello);
         btnHello.setOnClickListener(this);
+
+        btnHello.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                Toast.makeText(MainActivity.this, "Long Press", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
     }
 
 
