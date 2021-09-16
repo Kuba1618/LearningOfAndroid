@@ -18,8 +18,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch(view.getId()) {
             case R.id.btnHello:
-                Toast.makeText(this, "HelloBtn clicked", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(this, "HelloBtn clicked", Toast.LENGTH_SHORT).show();
                 txtHello.setText("Hello " + edtTxtName.getText().toString());
+                break;
+            case R.id.edtTxtName:
+                Toast.makeText(this, "Attempting to type sth", Toast.LENGTH_SHORT).show();
                 break;
             default:
                 break;
@@ -36,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnHello.setOnClickListener(this);
 
         edtTxtName = findViewById(R.id.edtTxtName);
+        edtTxtName.setOnClickListener(this);
         txtHello = findViewById(R.id.txtHello);
 
     }
