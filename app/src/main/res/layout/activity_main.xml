@@ -46,7 +46,7 @@
         android:layout_below="@+id/btnHello"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Hello"
+        android:text="Hello in the copy of application"
         android:textSize="20dp"/>
 
 </RelativeLayout>
