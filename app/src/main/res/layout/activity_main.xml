@@ -13,16 +13,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="100dp"
-        android:hint="Name"
-        android:textColor="@color/dark_green"
-        android:textStyle="italic|bold"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:hint="Name"
+        android:minHeight="48dp"
+        android:textColor="@color/dark_green"
+        android:textStyle="italic|bold" />
 
     <TextView
         android:layout_below="@+id/edtTxtName"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:id="@+id/txtWelcome"
         android:layout_width="wrap_content"
@@ -80,29 +81,38 @@
         android:layout_marginTop="30dp"
         android:text="Basketball"
         android:checked="true"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkBox2"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
+        android:text="Do you tell me your male ?"
+        android:id="@+id/letMeKnow"
+        android:textColor="@color/dark_green" />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/checkBox2"
         android:layout_marginTop="20dp"
-        android:layout_centerHorizontal="true"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_below="@+id/letMeKnow">
 
         <RadioButton
-            android:layout_width="120dp"
-            android:layout_height="30dp"
             android:id="@+id/rbMale"
-            android:text="Male"
-            android:layout_marginLeft="100dp"
-            android:checked="true"/>
-        <RadioButton
             android:layout_width="120dp"
-            android:layout_height="30dp"
-            android:id="@+id/rbFemale"
-            android:text="Female"
+            android:layout_height="48dp"
             android:layout_marginLeft="100dp"
-            android:checked="true"/>
+            android:checked="true"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rbFemale"
+            android:layout_width="120dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="100dp"
+            android:checked="true"
+            android:text="Female" />
     </RadioGroup>
 
 
