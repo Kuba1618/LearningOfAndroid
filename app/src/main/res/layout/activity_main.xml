@@ -81,6 +81,29 @@
         android:text="Basketball"
         android:checked="true"/>
 
-    
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/rbMale"
+            android:text="Male"
+            android:layout_marginLeft="100dp"
+            android:checked="true"/>
+        <RadioButton
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:id="@+id/rbFemale"
+            android:text="Female"
+            android:layout_marginLeft="100dp"
+            android:checked="true"/>
+    </RadioGroup>
+
 
 </RelativeLayout>
