@@ -5,17 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:padding="100dp">
+    android:padding="50dp">
 
 
     <EditText
+        android:id="@+id/edtTxtName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
         android:hint="Name"
         android:textColor="@color/dark_green"
         android:textStyle="italic|bold"
-        android:layout_centerInParent="true"
-        android:id="@+id/edtTxtName" />
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
 
     <TextView
         android:layout_below="@+id/edtTxtName"
@@ -48,5 +51,36 @@
         android:layout_marginTop="30dp"
         android:text="Hello in the copy of application"
         android:textSize="20dp"/>
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHello"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:text="Tennis"
+        android:checked="true"/>
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHello"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"
+        android:text="Swimming" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHello"
+        android:layout_marginLeft="185dp"
+        android:layout_marginTop="30dp"
+        android:text="Basketball"
+        android:checked="true"/>
+
+    
 
 </RelativeLayout>
