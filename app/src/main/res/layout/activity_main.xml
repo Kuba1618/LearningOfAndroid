@@ -8,12 +8,7 @@
     android:padding="50dp">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello Word!"
-        android:layout_centerInParent="true"/>
-    
+   
 
 
 
