@@ -8,112 +8,14 @@
     android:padding="50dp">
 
 
-    <EditText
-        android:id="@+id/edtTxtName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="50dp"
-        android:hint="Name"
-        android:minHeight="48dp"
-        android:textColor="@color/dark_green"
-        android:textStyle="italic|bold" />
-
-    <TextView
-        android:layout_below="@+id/edtTxtName"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"
-        android:id="@+id/txtWelcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/hello_word"
-        android:textColor="#43A047"
-        android:textSize="20sp"
-        android:textStyle="bold|italic" />
-
-
-    <Button
-        android:id="@+id/btnHello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtWelcome"
-        android:layout_centerHorizontal="true"
-        android:text="Say Hello" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/txtHello"
-        android:layout_below="@+id/btnHello"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:text="Hello in the copy of application"
-        android:textSize="20dp"/>
+        android:text="Hello Word!"
+        android:layout_centerInParent="true"/>
+    
 
-    <CheckBox
-        android:id="@+id/checkBox1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtHello"
-        android:layout_marginLeft="0dp"
-        android:layout_marginTop="30dp"
-        android:text="Tennis"
-        android:checked="true"/>
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtHello"
-        android:layout_marginLeft="75dp"
-        android:layout_marginTop="30dp"
-        android:text="Swimming" />
-
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/txtHello"
-        android:layout_marginLeft="185dp"
-        android:layout_marginTop="30dp"
-        android:text="Basketball"
-        android:checked="true"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/checkBox2"
-        android:layout_marginTop="40dp"
-        android:textSize="20dp"
-        android:text="Do you tell me your male ?"
-        android:id="@+id/letMeKnow"
-        android:textColor="@color/dark_green" />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical"
-        android:layout_below="@+id/letMeKnow">
-
-        <RadioButton
-            android:id="@+id/rbMale"
-            android:layout_width="120dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="100dp"
-            android:checked="true"
-            android:text="Male" />
-
-        <RadioButton
-            android:id="@+id/rbFemale"
-            android:layout_width="120dp"
-            android:layout_height="48dp"
-            android:layout_marginLeft="100dp"
-            android:checked="true"
-            android:text="Female" />
-    </RadioGroup>
 
 
 </RelativeLayout>
