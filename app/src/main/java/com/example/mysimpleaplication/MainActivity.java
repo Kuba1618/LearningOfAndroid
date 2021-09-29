@@ -18,30 +18,31 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ListView citiesList;
+    private ListView citiesListJava;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        citiesList = findViewById(R.id.citiesList);
+        citiesListJava = findViewById(R.id.citiesListXML);
 
-        ArrayList<String> cities = new ArrayList<>();
-        cities.add("Jędrzejów");
-        cities.add("Kielce");
-        cities.add("New York");
-        cities.add("Berlin");
-        cities.add("Cracow");
-        cities.add("Warsaw");
+        ArrayList<String> citiestArrayList = new ArrayList<>();
+        citiestArrayList.add("Kraków");
+        citiestArrayList.add("Katowice");
+        citiestArrayList.add("Kielce");
+        citiestArrayList.add("Poznań");
+        citiestArrayList.add("Śródmorze");
+        citiestArrayList.add("Bieliny");
+
 
         ArrayAdapter<String> citiesAdapter = new ArrayAdapter<>(
-                this ,
+                this,
                 android.R.layout.simple_list_item_1,
-                cities
+                citiestArrayList
         );
 
-        citiesList.setAdapter(citiesAdapter);
+        citiesListJava.setAdapter(citiesAdapter);
 
     }
 
