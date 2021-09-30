@@ -47,6 +47,19 @@ public class MainActivity extends AppCompatActivity {
 
         studentsSpinner.setAdapter(studentsAdapter);
 
+        studentsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Toast.makeText(MainActivity.this, students.get(i) + " Selected", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
+
         ArrayList<String> citiestArrayList = new ArrayList<>();
         citiestArrayList.add("Kraków");
         citiestArrayList.add("Katowice");
