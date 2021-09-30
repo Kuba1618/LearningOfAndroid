@@ -12,6 +12,7 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,6 +21,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private ListView citiesListJava;
+    private Spinner studentsSpinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +29,23 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         citiesListJava = findViewById(R.id.citiesListXML);
+        studentsSpinner = findViewById(R.id.studentsSpinner);
+
+        ArrayList<String> students = new ArrayList<>();
+        students.add("Kamil");
+        students.add("Lolek");
+        students.add("Bolek");
+        students.add("Krzysztof");
+        students.add("Teresa");
+        students.add("Bocian");
+
+        ArrayAdapter<String> studentsAdapter = new ArrayAdapter<>(
+                this,
+                android.R.layout.simple_spinner_dropdown_item,
+                students
+        );
+
+        studentsSpinner.setAdapter(studentsAdapter);
 
         ArrayList<String> citiestArrayList = new ArrayList<>();
         citiestArrayList.add("Kraków");
