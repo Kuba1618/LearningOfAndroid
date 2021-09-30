@@ -2,4 +2,11 @@
     <string name="app_name">MySimpleAplication</string>
     <string name="say_hello">Say Hello</string>
     <string name="hello_word">Hello Word!</string>
+    <string-array name="students">
+        <item>Meisam</item>
+        <item>Tom</item>
+        <item>Jack</item>
+        <item>John</item>
+        <item>Angelina</item>
+    </string-array>
 </resources>

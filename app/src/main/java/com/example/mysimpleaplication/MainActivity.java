@@ -31,26 +31,26 @@ public class MainActivity extends AppCompatActivity {
         citiesListJava = findViewById(R.id.citiesListXML);
         studentsSpinner = findViewById(R.id.studentsSpinner);
 
-        ArrayList<String> students = new ArrayList<>();
-        students.add("Kamil");
-        students.add("Lolek");
-        students.add("Bolek");
-        students.add("Krzysztof");
-        students.add("Teresa");
-        students.add("Bocian");
-
-        ArrayAdapter<String> studentsAdapter = new ArrayAdapter<>(
-                this,
-                android.R.layout.simple_spinner_dropdown_item,
-                students
-        );
-
-        studentsSpinner.setAdapter(studentsAdapter);
+//        ArrayList<String> students = new ArrayList<>();
+//        students.add("Kamil");
+//        students.add("Lolek");
+//        students.add("Bolek");
+//        students.add("Krzysztof");
+//        students.add("Teresa");
+//        students.add("Bocian");
+//
+//        ArrayAdapter<String> studentsAdapter = new ArrayAdapter<>(
+//                this,
+//                android.R.layout.simple_spinner_dropdown_item,
+//                students
+//        );
+//
+//        studentsSpinner.setAdapter(studentsAdapter);
 
         studentsSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                Toast.makeText(MainActivity.this, students.get(i) + " Selected", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, studentsSpinner.getSelectedItem().toString() + " Seleceted", Toast.LENGTH_SHORT).show();
             }
 
             @Override
