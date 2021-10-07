@@ -12,4 +12,5 @@
             android:id="@+id/alarm_menu"
             android:icon="@drawable/ic_alarm"
             app:showAsAction="ifRoom"/>
+
 </menu>

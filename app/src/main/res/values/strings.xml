@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">MySimpleAplication</string>
     <string name="hello">Hello</string>
-    <string name="hello_word">Hello Word !</string>
-    <string name="textview">TextView</string>
+    
 </resources>
