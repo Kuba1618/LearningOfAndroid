@@ -17,7 +17,8 @@
         android:src="@drawable/ic_add"
         android:backgroundTint="@color/dark_green"
         app:backgroundTint="@color/light_green"
-        app:rippleColor="@color/sky_blue"/>
+        app:rippleColor="@color/sky_blue"
+        android:id="@+id/fabButton"/>
 
 
 </RelativeLayout>

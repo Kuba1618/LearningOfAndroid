@@ -20,45 +20,28 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
 
-    private TextView txtHello;
-
-
+    private FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //txtHello = findViewById(R.id.txtHello);
-        //txtHello.setText(getString(R.string.hello));
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.main_menu,menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch(item.getItemId()){
-            case R.id.settings_menu: {
-                Toast.makeText(this," Settings Selected", Toast.LENGTH_SHORT).show();
-                return true;
+        fab = findViewById(R.id.fabButton);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, " Fab Clicked", Toast.LENGTH_SHORT).show();
             }
-            case R.id.alarm_menu: {
-                Toast.makeText(this, " Alarm Selected", Toast.LENGTH_SHORT).show();
-                return true;
-            }
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-
+        });
     }
+
+
 }
